@@ -1,7 +1,7 @@
 [
   {
     "of_total": 11,
-    "mark": 8,
+    "mark": 11,
     "results": [
       {
         "value": 1,
@@ -20,7 +20,7 @@
         "name": "Lab book entry completed"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Update your aboutMe.yml"
       },
       {
@@ -32,7 +32,7 @@
         "name": "checkID.json exists"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "You've forked the me repo"
       },
       {
@@ -44,7 +44,7 @@
         "name": "You've pushed your work to GitHub: checkID.json"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "You've got a photo for your GitHub account"
       }
     ],
