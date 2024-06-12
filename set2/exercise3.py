@@ -14,7 +14,7 @@ def is_odd(a_number):
 
     e.g. 4 % 2 = 0
         13 %12 = 1
-         3 % 2 = 1
+        3 % 2 = 1
 
     So if a_number modulo two is zero, then it's even.
     """
@@ -41,18 +41,14 @@ def fix_it(moves=True, should_move=True):
     # not moves=False
     # not should_moves=False
 
-
-if moves and should_move:
-return "No Problem"
-
-elif moves and notshould_move:
-return "WD-40"
-
-elif not moves and should_moves:
-return "Duct Tape" else return "No Problem"
-
-if moves and not should_move:
-    return "WD-40"
+    if moves and should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and should_move:
+        return "WD-40"
+    else:
+        return "No Problem"
 
 
 def loops_preview():
@@ -62,10 +58,12 @@ def loops_preview():
     return a list of 8 items, each one a string with exacly one 💩 in it.
     E.g.: ['💩', '💩', '💩', '💩', '💩', '💩', '💩', '💩']
     """
-    choc_list = []
+
+    chocolate_list = []
     for i in range(8):
-        choc_list.append("💩")
-    return choc_list
+        chocolate_list.append("💩")
+    # print(chocolate_list)
+    return chocolate_list
 
 
 def loops_1a():
@@ -75,20 +73,29 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    star_list = []
+    for i in range(10):
+        star_list.append("*")
+
+   # print(star_list)
+    return star_list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
 
     Return a list of number_of_items items, each one a
-    string with exacly one symbol in it.
+    string with exactly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
 
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    result_list = []
+    for i in range(number_of_items):
+        result_list.append(symbol)
+
+    return result_list
 
 
 def loops_2_preview():
@@ -109,6 +116,7 @@ def loops_2_preview():
         for j in range(4):
             row.append("💩")
         field.append(row)
+    # print(field)
     return field
 
 
@@ -130,7 +138,21 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_list_loop = []
+
+    for i in range(10):
+        row = []
+        for j in range(10):
+            row.append("*")
+            # print(row)
+        star_list_loop.append(row)
+    # 1 = []
+    # 1 = ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
+    # 2 =  ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
+
+    # [1,2,3,4,5,6,7,8,9,10]
+
+    return star_list_loop
 
 
 def loops_3():
@@ -154,7 +176,15 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+
+    bet_list_loop = []
+    for i in range(10):
+        row = []
+        for j in range(10):
+            row.append(str(i))
+        bet_list_loop.append(row)
+    # print(bet_list_loop)
+    return bet_list_loop
 
 
 def loops_4():
@@ -162,8 +192,7 @@ def loops_4():
 
     Return this:
     [
-      ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
-      ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
+      ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -174,7 +203,15 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+
+    bet_list_loop = []
+    for i in range(10):
+        row = []
+        for j in range(10):
+            row.append(str(j))
+        bet_list_loop.append(row)
+    # print(bet_list_loop)
+    return bet_list_loop
 
 
 def loops_5():
