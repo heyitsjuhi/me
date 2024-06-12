@@ -1,7 +1,7 @@
 [
   {
     "of_total": 11,
-    "mark": 8,
+    "mark": 7,
     "results": [
       {
         "value": 1,
@@ -32,7 +32,7 @@
         "name": "checkID.json exists"
       },
       {
-        "value": 1,
+        "value": 0,
         "name": "You've forked the me repo"
       },
       {
