@@ -241,7 +241,19 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    return
+
+
+def loops_5():
+    coordinates = []
+    for i in range(10):  # Loop over rows
+        row = []
+        for j in range(5):  # Loop over columns
+            # Create the coordinate string and add to the row list
+            row.append(f"(i{i}, j{j})")
+        # Add the row list to the main coordinates list
+        coordinates.append(row)
+    return coordinates
 
 
 def loops_6():
@@ -264,7 +276,12 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    wedge = []
+    for i in range(10):  # Loop over the number of rows
+        # Generate the list of numbers from 0 to i
+        row = [str(j) for j in range(i + 1)]
+        wedge.append(row)  # Add the generated list to the main wedge list
+    return wedge
 
 
 def loops_7():
