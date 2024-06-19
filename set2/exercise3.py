@@ -305,7 +305,23 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    return
+
+
+def loops_7():
+    pyramid = []
+    total_rows = 5
+    total_cols = 9  # Each row has a fixed width to accommodate the pyramid
+
+    for i in range(total_rows):
+        row = [' '] * total_cols  # Initialize a row with all spaces
+        start = total_rows - 1 - i  # Calculate the start index for asterisks
+        end = total_rows - 1 + i    # Calculate the end index for asterisks
+        for j in range(start, end + 1):
+            row[j] = '*'  # Place asterisks in the calculated positions
+        pyramid.append(row)  # Add the completed row to the pyramid list
+
+    return pyramid
 
 
 if __name__ == "__main__":
