@@ -305,10 +305,7 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return
 
-
-def loops_7():
     pyramid = []
     total_rows = 5
     total_cols = 9  # Each row has a fixed width to accommodate the pyramid
