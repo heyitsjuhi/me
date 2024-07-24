@@ -71,7 +71,7 @@ def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 2
     """
-    count = None
+    count = input_list.count(1)
 
     return count
 
@@ -80,7 +80,7 @@ def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
     """Count the number of times search_for_this shows up in the input_list.
     Return an integer.
     """
-    count = None
+    count = input_list.count(search_for_this)
 
     return count
 
@@ -105,6 +105,18 @@ def fizz_buzz() -> List:
     """
     fizz_buzz_list = []
     # your code here
+
+    fizz_buzz_list = []
+
+    for i in range(1, 101):
+        if i % 3 == 0 and i % 5 == 0:
+            fizz_buzz_list.append('FizzBuzz')
+        elif i % 3 == 0:
+            fizz_buzz_list.append('Fizz')
+        elif i % 5 == 0:
+            fizz_buzz_list.append('Buzz')
+        else:
+            fizz_buzz_list.append(i)
 
     return fizz_buzz_list
 
